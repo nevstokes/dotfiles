@@ -1,0 +1,9 @@
+# Automatically normalize line endings
+* text=auto
+
+# Don't export
+.gitattributes  export-ignore
+.gitignore      export-ignore
+
+# .gitattributes syntax highlighting
+*.gitattributes linguist-language=gitattributes

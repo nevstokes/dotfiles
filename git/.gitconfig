@@ -1,0 +1,34 @@
+[user]
+	name = Nev Stokes
+
+[core]
+	excludesfile = ~/.gitignore
+	attributesfile = ~/.gitattributes
+	autocrlf = input
+	whitespace = -trailing-space,-indent-with-non-tab,-tab-in-indent
+
+[init]
+	templatedir = ~/dotfiles/git/template
+
+[credential]
+	# https://blog.scottlowe.org/2016/11/21/gnome-keyring-git-credential-helper/
+	# helper = /usr/share/doc/git/contrib/credential/gnome-keyring/git-credential-gnome-keyring
+
+[help]
+	# Automatically correct and execute mistyped commands
+	autocorrect = 1
+
+[apply]
+	# Detect whitespace errors when applying a patch
+	whitespace = fix
+
+[include]
+	# use separate file for username / github token / etc
+	path = ~/.gitconfig.local
+
+[fetch]
+	prune = true
+
+[rerere]
+	autoupdate = true
+	enabled = true
