@@ -9,3 +9,4 @@ source ~/dotfiles/zsh/includes/prompt.zsh
 
 eval "$(fasd --init auto)"
 eval "$(direnv hook zsh)"
+eval "$(hub alias -s)"

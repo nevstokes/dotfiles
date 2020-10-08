@@ -27,6 +27,10 @@ set hlsearch
 set showmatch
 
 
+let g:ackprg = 'ag --vimgrep'
+
+
+
 set cul                                           " highlight current line
 hi CursorLine term=none cterm=none ctermbg=3      " adjust color
 

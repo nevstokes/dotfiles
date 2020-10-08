@@ -1,12 +1,14 @@
 alias please="sudo !!"
 
+alias cat="bat"
+
 alias di="docker image ls"
 alias dps="docker ps"
 alias dsp="docker system prune"
 
 alias dc="docker-compose"
 alias dce="docker-compose exec"
-alias dcr="docker-compose run"
+alias dcr="docker-compose run --rm -it"
 alias dcu="docker-compose up -d"
 alias dcd="docker-compose down -v --remove-orphans"
 alias dr="docker run --rm -ti"
