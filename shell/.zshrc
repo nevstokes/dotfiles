@@ -1,5 +1,3 @@
-FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
-
 autoload -Uz compinit && compinit
 
 zstyle ':completion:*' menu select
@@ -7,6 +5,7 @@ zstyle -e ':completion:*:default' list-colors 'reply=("${PREFIX:+=(#bi)($PREFIX:
 
 eval "$(direnv hook zsh)"
 eval "$(zoxide init zsh)"
+eval "$(shellclear --init-shell)"
 
 source <(fzf --zsh)
 
@@ -20,7 +19,8 @@ source ~/dotfiles/zsh/includes/functions.zsh
 source ~/dotfiles/zsh/includes/history.zsh
 source ~/dotfiles/zsh/includes/prompt.zsh
 
+EZA_CONFIG_DIR="/Users/${USER}/.config/eza"
+FPATH=${HOMEBREW_PREFIX}/share/zsh-completions:$FPATH
+
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
-
-EZA_CONFIG_DIR="/Users/${USER}/.config/eza"

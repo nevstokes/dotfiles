@@ -16,5 +16,6 @@ alias gsw="git switch"
 alias cd="z"
 alias ls="eza"
 alias ll="eza --header --oneline --long --git --no-user --colour-scale=all --colour-scale-mode=gradient --icons --group-directories-first"
+alias la="eza --header --oneline --long --almost-all --git --no-user --colour-scale=all --colour-scale-mode=gradient --icons --group-directories-first"
 
 alias -g G='| grep -v grep | grep --color -i'
